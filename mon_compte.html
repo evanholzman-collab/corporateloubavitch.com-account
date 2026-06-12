@@ -168,6 +168,35 @@
       border-radius: 2px;
       letter-spacing: 0.5px;
     }
+
+    /* ── MOBILE ── */
+    @media (max-width: 600px) {
+      nav { padding: 10px 16px; height: auto; }
+      nav .nav-left a, nav .nav-right a, nav .nav-right .welcome { font-size: 12px; }
+      nav .nav-left { gap: 10px; }
+      nav .nav-right { gap: 10px; }
+
+      main { padding: 24px 12px 40px; }
+      h1 { font-size: 26px; margin-bottom: 24px; }
+
+      /* cartes empilées verticalement */
+      .top-row { flex-direction: column; gap: 16px; }
+      .card-info, .card-reduction { flex: none; width: 100%; }
+      .card-reduction { text-align: center; }
+
+      /* labels en gras comme sur le screenshot */
+      .info-line { font-size: 14px; font-weight: normal; }
+      .info-line strong { font-weight: bold; }
+
+      .btn { width: 100%; text-align: center; padding: 12px; font-size: 13px; }
+
+      .reduction-codes { font-size: 15px; }
+      .reduction-codes .title { font-size: 18px; }
+
+      footer { padding: 30px 16px 0; }
+      .footer-cols { flex-direction: column; gap: 24px; }
+      .footer-bottom { margin: 0 -16px; padding: 12px 16px; flex-direction: column; gap: 8px; text-align: center; }
+    }
   </style>
 </head>
 <body>
@@ -196,16 +225,16 @@
     <div class="card card-info">
       <div class="card-header">Mes informations</div>
       <div class="card-body">
-        <p class="info-line">Status : <span class="badge badge-blue">Membre régulier</span></p>
-        <p class="info-line">Nom : Holzman</p>
-        <p class="info-line">Prénom : Evan</p>
-        <p class="info-line">Email : evan.holzman@gmail.com</p>
-        <p class="info-line">Téléphone : +33 6 73 68 08 43</p>
-        <p class="info-line">Date de naissance : 12/09/2001</p>
-        <p class="info-line">Adresse : 57 Boulevard Lannes</p>
-        <p class="info-line">Code postal : 75016</p>
-        <p class="info-line">Ville : Paris</p>
-        <p class="info-line">Pays : France</p>
+        <p class="info-line"><strong>Status :</strong> <span class="badge badge-blue">Membre régulier</span></p>
+        <p class="info-line"><strong>Nom :</strong> Holzman</p>
+        <p class="info-line"><strong>Prénom :</strong> Evan</p>
+        <p class="info-line"><strong>Email :</strong> evan.holzman@gmail.com</p>
+        <p class="info-line"><strong>Téléphone :</strong> +33 6 73 68 08 43</p>
+        <p class="info-line"><strong>Date de naissance :</strong> 12/09/2001</p>
+        <p class="info-line"><strong>Adresse :</strong> 57 Boulevard Lannes</p>
+        <p class="info-line"><strong>Code postal :</strong> 75016</p>
+        <p class="info-line"><strong>Ville :</strong> Paris</p>
+        <p class="info-line"><strong>Pays :</strong> France</p>
         <br>
         <a class="btn btn-blue" href="#">Modifier mes informations</a>
       </div>
@@ -220,7 +249,7 @@
           <div>Courte Durée : F772901</div>
           <div>Moyenne Durée (+31j) : F772905</div>
         </div>
-        <a class="btn btn-orange" href="#">🏷 Nouvelle grille tarifaire</a>
+        <a class="btn btn-blue" href="#">🏷 Nouvelle grille tarifaire</a>
       </div>
     </div>
   </div>
@@ -229,11 +258,11 @@
   <div class="card card-adhesion">
     <div class="card-header">Mon adhésion</div>
     <div class="card-body">
-      <p class="info-line">Status de l'adhésion : <span class="badge badge-green">Actif</span></p>
+      <p class="info-line"><strong>Status de l'adhésion :</strong> <span class="badge badge-green">Actif</span></p>
       <br>
-      <p class="info-line">Numero d'adhérent : 21964</p>
-      <p class="info-line">Date de début d'adhésion : 13/02/2026</p>
-      <p class="info-line">Date de fin d'adhésion : 13/02/2027</p>
+      <p class="info-line"><strong>Numero d'adhérent :</strong> 21964</p>
+      <p class="info-line"><strong>Date de début d'adhésion :</strong> 13/02/2026</p>
+      <p class="info-line"><strong>Date de fin d'adhésion :</strong> 13/02/2027</p>
       <br>
       <a class="btn btn-blue" href="#">Prolonger mon adhésion</a>
     </div>
